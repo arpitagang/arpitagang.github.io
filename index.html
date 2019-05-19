@@ -1,0 +1,115 @@
+<!-- Designed and developed by Kabir Goel (kbrgl.github.io) -->
+<html>
+    <head>
+        <title>Arpita Gang &middot; PhD Student</title>
+        <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+        <link rel="stylesheet" href="styles/carpal.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="styles/index.css" type="text/css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <!-- <div style="margin-top: 5vmin; margin-bottom: -10vmin;">
+        <h1><center>Karan Goel</center></h1>    
+        </div> -->
+        <div class="container">
+            <div class="row">
+                <div class="drawer three columns">
+                    <img class="dp" src="karan.jpg" width="20%"  alt="A picture of Karan">
+                    <h3>Karan Goel</h3>
+                    <nav>
+                        <ul style="list-style-type: none;">
+                            <li>kgoel [at] cs [dot] stanford [dot] edu</li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="content eight columns offset-by-one">
+                    <p>
+                        I am a PhD student in the Electrical and Computer Engineering department at Rutgers University working under the supervision of Prof. Waheed Bajwa. My research interests lie in the areas of distributed optimization and information processing.
+                    </p>
+                    <p style="margin-top: 2rem;">
+                        Previously, I worked as a Research Assistant from 2016-17 and also graduated with a Master's degree from Indraprastha Institute of Information Technology, Delhi in 2016. I worked in audio signal processing, specifically on source separation problem.
+                    </p>
+
+                </div>
+                <div class="tabs">
+                        <span class="tab ns-tab active" onclick="switchTab('ns')">News</span>
+                        <!-- <span class="tab or-tab" onclick="switchTab('or')">Ongoing Research</span> -->
+                        <span class="tab pb-tab" onclick="switchTab('pb')">Publications</span>
+                        <!-- <span class="tab pr-tab" onclick="switchTab('pr')">Preprints</span> -->
+                    </div>
+
+                    <hr>
+
+                    <section class="publications">
+                       
+                        <div class="pub" style="border-right-color: rgba(244, 126, 156, 0.2);">
+                            <a target="_blank" href="">
+                            <span class="pub-title">Fast and communication-efficient distributed PCA" accepted at ICASSP 2019.<i class="rarr">&rarr;</i></span>
+                            </a>
+                            <span class="pub-authors">Arpita Gang, Haroon Raja, Waheed U. Bajwa </span>
+                            <span class="pub-meta">ICASSP 2019</span>
+                        </div>
+                        <div class="pub" style="border-right-color: rgba(244, 126, 156, 0.2);">
+                            <a target="_blank" href="">
+                            <span class="pub-title">Towards Automated Single Channel Source Separation using Neural Networks <i class="rarr">&rarr;</i></span>
+                            </a>
+                            <span class="pub-authors">Arpita Gang, Pravesh Biyani, Akshay Soni</span>
+                            <span class="pub-meta">INTERSPEECH 2018 2019</span>
+                        </div>
+                        <div class="pub" style="border-right-color: rgba(80, 240, 40, 0.2);">
+                            <!-- <a target="_blank" href=""> -->
+                            <span class="pub-title">\On Discriminative Framework for Single Channel Audio Source Separation</span>
+                            <!-- </a> -->
+                            <span class="pub-authors">Arpita Gang, Pravesh Biyani</span>
+                            <span class="pub-meta">INTERSPEECH 2016</span>
+                        </div>
+                        <div class="pub" style="border-right-color: rgba(126, 156, 244, 0.2);">
+                            <a target="_blank" href="">
+                            <span class="pub-title">\A fast converging method for common mode sensor based impulse noise cancellation for downstream VDSL <i class="rarr">&rarr;</i></span>
+                            </a>
+                            <span class="pub-authors">Ramanjit Ahuja, Arpita Gang, Pravesh Biyani and Surendra Prasad,</span>
+                            <span class="pub-meta">EUSIPCO 2016</span>
+                        </div>
+                        
+                    </section>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+    // var or = document.querySelector('.ongoing-research'),
+    var pb = document.querySelector('.publications'),
+        ns = document.querySelector('.news');
+    // var ort = document.querySelector('.or-tab'),
+    var pbt = document.querySelector('.pb-tab'),
+        nst = document.querySelector('.ns-tab');
+    // or.style.display = 'none';
+    pb.style.display = 'none';
+    function switchTab(tab) {
+        switch (tab) {
+            case 'ns':
+                ns.style.display = 'block';
+                nst.className = 'tab ns-tab active';
+                pb.style.display = 'none';
+                pbt.className = 'tab pb-tab';
+                break;
+            case 'pb':
+                ns.style.display = 'none';
+                nst.className = 'tab ns-tab';
+                pb.style.display = 'block';
+                pbt.className = 'tab pb-tab active';
+                break;
+            // case 'or':
+            //     ns.style.display = 'none';
+            //     nst.className = 'tab ns-tab';
+            //     or.style.display = 'block';
+            //     ort.className = 'tab or-tab active';
+            //     pb.style.display = 'none';
+            //     pbt.className = 'tab pb-tab';
+            //     break;
+        }
+    }
+    </script>
+</html>
