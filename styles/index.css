@@ -153,6 +153,11 @@ i.rarr {
 .tab:not([class*='active']) {
   color: #ccc; }
 
+ol li {
+  background: #cce5ff;
+  margin: 5px;
+}
+
 @media screen and (max-width: 900px) {
   .dp {
     width: 20rem; }
