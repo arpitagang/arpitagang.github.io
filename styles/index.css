@@ -130,7 +130,6 @@ i.rarr {
   display: block; }
 
 .news ol {
-  list-style-type: disc;
   font-size: 1.5rem; }
   .news ol li {
     padding-left: 1rem; }
@@ -158,9 +157,8 @@ ol li {
 }
 
 ol {
-  list-style-type: disc;
   font-size: 1.5rem; }
-  .news ul li {
+  .news ol li {
     padding-left: 1rem; }
 
 @media screen and (max-width: 900px) {
