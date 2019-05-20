@@ -156,7 +156,7 @@ ol li {
   margin: 5px;
 }
 
-ol li:before {content: "(" counter(section, numbers) ") ";}
+ol li:before {content: "[" counter(section, numbers) "] ";}
 li { counter-increment: section;}
 
 ol {
