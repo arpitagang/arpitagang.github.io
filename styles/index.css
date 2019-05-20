@@ -129,10 +129,10 @@ i.rarr {
 .pub span {
   display: block; }
 
-.news ul {
+.news ol {
   list-style-type: disc;
   font-size: 1.5rem; }
-  .news ul li {
+  .news ol li {
     padding-left: 1rem; }
 
 .tabs {
